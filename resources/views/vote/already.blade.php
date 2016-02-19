@@ -16,7 +16,7 @@
 
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
-            <p>Pour toute question ou remarque relative aux elections BDE, veuillez contacter l'arbitre : {{ config('election.referer.email') }}</p> 
+            <p>Pour toute question ou remarque relative aux élections BDE, veuillez contacter l'arbitre : {{ config('election.referer.email') }}</p> 
         </div>
     </div>
 </div>

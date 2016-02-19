@@ -8,17 +8,17 @@
                 <div class="panel-heading">Bienvenue sur le site des élections BDE UTT</div>
                 <div class="panel-body">
                     <p>Ce site te permet de voter pour l'équipe que tu as envie de voir gérer le BDE
-                    et les différents evenememnts et activités des deux prochains semestres.</p>
+                    et les différents évènements et activités des deux prochains semestres.</p>
 
 
                     @if (isset($endTime))
                         <p><strong>Attention, il ne reste plus que {{ $endTime }} afin la fin des votes !</strong></p>
 
                         <p>Le vote est anonyme, cependant afin de vérifier que seul les cotisants BDE UTT votent et
-                        afin d'éviter à une même personne de voter plusieurs fois, le site nécéssite une connexion.</p>
+                        afin d'éviter à une même personne de voter plusieurs fois, le site nécessite une connexion.</p>
                         <p>Après la connexion, le site étudiant demandera de donner l'autorisation à "Élection BDE UTT" (ce site)
                         d'accéder à tes informations <strong>publiques</strong> (Ton nom et ton numéro étudiant).
-                        C'est tout a fait normale et c'est nécéssaire pour pouvoir voter sur ce site.</p>
+                        C'est tout à fait normale et c'est nécessaire pour pouvoir voter sur ce site.</p>
 
 
                         @if (Session::has('login'))
