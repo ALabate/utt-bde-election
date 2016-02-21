@@ -3,7 +3,8 @@
 return [
 	// Informations en rapport avec le site etu
 	'etuutt' => [
-		'baseuri' => 'https://etu.utt.fr',
+		'publicuri' => 'https://etu.utt.fr', // base uri used to redirect user
+		'baseuri' => 'https://etu.utt.fr', // base uri used to connect to api
 		'appid' => '',
 		'appsecret' => ''
 	],

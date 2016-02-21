@@ -41,7 +41,7 @@ class LoginController extends Controller
      */
     public function redirect(){
         return redirect(
-            config('election.etuutt.baseuri')
+            config('election.etuutt.publicuri')
             . '/api/oauth/authorize?client_id='
             . config('election.etuutt.appid')
             . '&scopes=public&response_type=code');
@@ -119,10 +119,10 @@ class LoginController extends Controller
         }
 
         // Check if the user is in cotisant list
-        if(!in_array($json['response']['data']['studentId'], config('election.cotisants.id'))
-            && !in_array($json['response']['data']['login'], config('election.cotisants.login'))) {
-            return redirect()->route('login_cannot');
-        }
+//        if(!in_array($json['response']['data']['studentId'], config('election.cotisants.id'))
+//            && !in_array($json['response']['data']['login'], config('election.cotisants.login'))) {
+//            return redirect()->route('login_cannot');
+//        }
 
         // Login
         Session::put('login', $json['response']['data']['login']);
