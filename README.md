@@ -27,7 +27,8 @@ curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/loca
 mkdir -p /var/www/domain.com
 ```
 
-* Configure your php-fpm pool
+* Configure your php-fpm pool
+
 Create `/etc/php5/fpm/pool.d/domain.com.conf` with the following content :
 
 ```
