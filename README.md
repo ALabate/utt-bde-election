@@ -80,7 +80,7 @@ apt-get install nginx
 
 * Create this file
 
-```
+```nginx
 # /etc/nginx/sites-available/domain.com
 server {
     listen 80;
