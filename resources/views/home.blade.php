@@ -18,7 +18,7 @@
                         afin d'éviter à une même personne de voter plusieurs fois, le site nécessite une connexion.</p>
                         <p>Après la connexion, le site étudiant demandera de donner l'autorisation à "Élection BDE UTT" (ce site)
                         d'accéder à tes informations <strong>publiques</strong> (Ton nom et ton numéro étudiant).
-                        C'est tout à fait normale et c'est nécessaire pour pouvoir voter sur ce site.</p>
+                        C'est tout à fait normal et c'est nécessaire pour pouvoir voter sur ce site.</p>
 
 
                         @if (Session::has('login'))
