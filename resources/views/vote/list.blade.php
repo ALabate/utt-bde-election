@@ -10,7 +10,8 @@
         </div>
     </div>
 
-	@foreach ($lists as $i => $list)
+    @foreach ($lists as $i => $list)
+    @if (!empty($list['name']))
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
@@ -31,6 +32,7 @@
             </div>
         </div>
     </div>
+    @endif
     @endforeach
 
     <div class="row">
