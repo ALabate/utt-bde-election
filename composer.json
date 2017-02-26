@@ -28,17 +28,25 @@
 	},
 	"scripts": {
 		"post-install-cmd": [
-			"php artisan clear-compiled",
+			"php artisan key:generate",
+			"php artisan migrate --force",
 			"php artisan optimize"
 		],
 		"post-update-cmd": [
 			"php artisan clear-compiled",
+			"php artisan migrate --force",
 			"php artisan optimize"
 		],
 		"post-create-project-cmd": [
-			"php -r \"copy('.env.example', '.env');\"",
 			"php artisan key:generate"
 		]
+	},
+	"extra": {
+		"heroku": {
+			"framework": "silex",
+			"document-root": "public",
+			"index-document": "index.php"
+		}
 	},
 	"config": {
 		"preferred-install": "dist"
